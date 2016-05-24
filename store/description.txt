@@ -1,0 +1,16 @@
+# Name:
+
+Color Flash
+
+
+# Short description:
+
+Display a colored strobe effect
+
+
+# Description:
+
+Display a strobe effect on your screen using random or up to six predefined colors.
+Use at your own risk.
+
+Source code: https://github.com/SpiritCroc/ColorFlash

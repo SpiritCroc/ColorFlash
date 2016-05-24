@@ -1,0 +1,83 @@
+<!--
+    Copyright (C) 2016 SpiritCroc
+    Email: spiritcroc@gmail.com
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources>
+    <string name="app_name">ColorFlash</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="toast_greeting">Enter settings by long-pressing anywhere</string>
+
+    <!-- Settings -->
+    <string name="pref_category_general">General</string>
+    <string name="pref_greeting_toast_title">Greeting toast</string>
+    <string name="pref_greeting_toast_summary">Show a message how to enter settings on start</string>
+    <string name="pref_keep_screen_on_title">Keep screen on</string>
+    <string name="pref_immersive_title">Immersive</string>
+    <string name="pref_immersive_summary">Fullscreen</string>
+
+    <string name="pref_category_flash">Flash</string>
+    <string name="pref_flash_delay_title">Flash delay</string>
+    <string name="pref_flash_delay_summary">%d ms</string>
+    <string name="pref_flash_mode_title">Flash mode</string>
+    <string name="pref_flash_mode_random">Random</string>
+    <string name="pref_flash_mode_2_colors">2 colors</string>
+    <string name="pref_flash_mode_3_colors">3 colors</string>
+    <string name="pref_flash_mode_4_colors">4 colors</string>
+    <string name="pref_flash_mode_5_colors">5 colors</string>
+    <string name="pref_flash_mode_6_colors">6 colors</string>
+
+    <string name="pref_category_flash_mode_random">Random</string>
+    <string name="pref_no_gray_title">Filter out gray</string>
+    <string name="pref_gray_threshold_title">Gray threshold</string>
+    <string name="pref_gray_threshold_summary">Set up gray threshold</string>
+    <string name="pref_gray_threshold_dialog">The higher the value, the more colors will be filtered out for being too gray. High values can result in poor performance</string>
+    <string name="pref_high_contrast_title">High contrast</string>
+    <string name="pref_contrast_threshold_title">Contrast threshold</string>
+    <string name="pref_contrast_threshold_summary">Set up contrast threshold</string>
+    <string name="pref_contrast_threshold_dialog">The higher the value, the more colors will be filtered out for not having enough contrast compared with the previous color. High values can result in poor performance</string>
+
+    <string name="pref_category_flash_mode_colors">Colors</string>
+    <string name="pref_color_1">Color 1</string>
+    <string name="pref_color_2">Color 2</string>
+    <string name="pref_color_3">Color 3</string>
+    <string name="pref_color_4">Color 4</string>
+    <string name="pref_color_5">Color 5</string>
+    <string name="pref_color_6">Color 6</string>
+
+    <string name="pref_category_about">About</string>
+    <string name="pref_about_source_code_title">Source code</string>
+    <string name="pref_about_source_code_summary">https://github.com/SpiritCroc/ColorFlash</string>
+
+    <string name="pref_category_third_party">Third party</string>
+    <string name="pref_third_party_color_picker_title">Color picker</string>
+    <string name="pref_third_party_color_picker_summary" translatable="false">Copyright (C) 2010 Daniel Nilsson\nCopyright (C) 2011 Sergey Margaritov\nCopyright (C) 2013 Slimroms\n\nLicensed under the Apache License, Version 2.0.</string>
+    <string name="pref_third_party_seek_bar_preference_title">SeekBar preference</string>
+    <string name="pref_third_party_seek_bar_preference_summary">Copyright (C) 2013 The CyanogenMod Project\n\nLicensed under the GNU General Public License version 3 as published by the Free Software Foundation.</string>
+
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right" translatable="false">→</string>
+    <string name="arrow_down" translatable="false">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+</resources>

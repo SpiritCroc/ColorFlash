@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2016 SpiritCroc
+    Email: spiritcroc@gmail.com
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_category_general">
+
+        <SwitchPreference
+            android:key="pref_greeting_toast"
+            android:title="@string/pref_greeting_toast_title"
+            android:summary="@string/pref_greeting_toast_summary"
+            android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="pref_keep_screen_on"
+            android:title="@string/pref_keep_screen_on_title"
+            android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="pref_immersive"
+            android:title="@string/pref_immersive_title"
+            android:summary="@string/pref_immersive_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="@string/pref_category_flash">
+
+        <EditTextPreference
+            android:key="tmp_flash_delay"
+            android:title="@string/pref_flash_delay_title"
+            android:numeric="integer"
+            android:defaultValue="100" />
+
+        <ListPreference
+            android:key="pref_flash_mode"
+            android:title="@string/pref_flash_mode_title"
+            android:entries="@array/pref_flash_mode_entries"
+            android:entryValues="@array/pref_flash_mode_entry_values"
+            android:defaultValue="0" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_category_flash_mode_random"
+        android:title="@string/pref_category_flash_mode_random">
+
+        <SwitchPreference
+            android:key="pref_no_gray"
+            android:title="@string/pref_no_gray_title"
+            android:defaultValue="true" />
+
+        <de.spiritcroc.colorflash.SeekBarPreference
+            android:key="pref_gray_threshold"
+            android:dependency="pref_no_gray"
+            android:title="@string/pref_gray_threshold_title"
+            android:summary="@string/pref_gray_threshold_summary" />
+
+        <SwitchPreference
+            android:key="pref_high_contrast"
+            android:title="@string/pref_high_contrast_title"
+            android:defaultValue="true" />
+
+        <de.spiritcroc.colorflash.SeekBarPreference
+            android:key="pref_contrast_threshold"
+            android:dependency="pref_high_contrast"
+            android:title="@string/pref_contrast_threshold_title"
+            android:summary="@string/pref_contrast_threshold_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_category_flash_mode_colors"
+        android:title="@string/pref_category_flash_mode_colors">
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="pref_color_1"
+            android:title="@string/pref_color_1"
+            android:defaultValue="0xffff0000" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="pref_color_2"
+            android:title="@string/pref_color_2"
+            android:defaultValue="0xff00ff00" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="pref_color_3"
+            android:title="@string/pref_color_3"
+            android:defaultValue="0xff0000ff" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="pref_color_4"
+            android:title="@string/pref_color_4"
+            android:defaultValue="0xff00ffff" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="pref_color_5"
+            android:title="@string/pref_color_5"
+            android:defaultValue="0xffff00ff" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="pref_color_6"
+            android:title="@string/pref_color_6"
+            android:defaultValue="0xffffff00" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_category_about">
+
+        <Preference
+            android:title="@string/pref_about_source_code_title"
+            android:summary="@string/pref_about_source_code_summary">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/SpiritCroc/ColorFlash" />
+
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_category_third_party">
+
+        <Preference
+            android:title="@string/pref_third_party_color_picker_title"
+            android:summary="@string/pref_third_party_color_picker_summary" >
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.apache.org/licenses/LICENSE-2.0" />
+
+        </Preference>
+
+        <Preference
+            android:title="@string/pref_third_party_seek_bar_preference_title"
+            android:summary="@string/pref_third_party_seek_bar_preference_summary" >
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.gnu.org/licenses/" />
+
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
